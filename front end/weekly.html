@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>WEEKLY STATISTICS</title>
+  <link rel="stylesheet" href="weeklystyle.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+</head>
+<body >
+     
+       <input type="checkbox" id="check">
+       <header>
+         <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+          </label>
+      <div class="left_area">
+        <h3>DP<span>List Maker</span></h3>
+      </div>
+      <div class="right_area">
+         <i class="fa fa-bell fa_custom fa-2x"></i>
+        <a href="login.html" class="logout_btn">Logout</a>
+      </div>
+   </header>
+   
+<div class="sidebar">
+      <center>
+        <a href="profile.html"><img src="boy.jpg" class="profile_image" alt=""></a>
+        <h4>John</h4>
+      </center>
+      <a href="home.html"><i class="fas fa-home"></i><span>HOME</span></a>
+      <a href="add list.html"><i class="fas fa-desktop"></i><span>Add a Task</span></a>
+      <a href="weekly.html"><i class="fas fa-cogs"></i><span>weekly Statistics</span></a>
+      <a href="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKarachi&amp;src=YXJlZWouMTYwMTAyMkBnbWFpbC5jb20&amp;src=ZW4ucGsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23039BE5&amp;color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"><i class="fas fa-table"></i><span>open a google calender</span></a>
+      <a href="#"><i class="fas fa-share"></i><span>Shared with me </span></a>
+      <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+      <a href="setting.html"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+    </div>
+    <div class="box">
+  <img class="img">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['days', 'performance %', '.'],
+          ['MONDAY',  50,      0],
+          ['TUESDAY',  10,      0],
+          ['WEDNESDAY',  30,       0],
+          ['THURSDAY',  40,      0]
+        ]);
+
+        var options = {
+          title: 'WEEKLY PERORMANCE',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+<div id="piechart"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['HOME', 8],
+  ['SHOPPING', 2],
+  ['PERSONAL', 4],
+  ['WORK', 2],
+  ['OTHERS', 8]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = 
+  {
+    'title':'PERFORMACE CATEOGARY WISE ', 'width':550, 'height':400
+  };
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+</div>
+
+</body>
+</html>

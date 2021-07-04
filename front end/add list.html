@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>ADD TASK</title>
+    <link rel="stylesheet" type="text/css" href="addstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+    <input type="checkbox" id="check">
+	 <header>
+        <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+          </label>
+      <div class="left_area">
+        <h3>DP<span>List Maker</span></h3>
+      </div>
+      <div class="right_area">
+         <i class="fa fa-bell fa_custom fa-2x"></i>
+        <a href="login.html" class="logout_btn">Logout</a>
+      </div>
+   </header>
+   
+<div class="sidebar">
+      <center>
+        <a href="profile.html"><img src="boy.jpg" class="profile_image" alt=""></a>
+        <h4>John</h4>   
+      </center>
+      <a href="home.html"><i class="fas fa-home"></i><span>HOME</span></a>
+      <a href="add list.html"><i class="fas fa-desktop"></i><span>Add a Task</span></a>
+      <a href="weekly.html"><i class="fas fa-bars"></i><span>weekly Statistics</span></a>
+      <a href="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKarachi&amp;src=YXJlZWouMTYwMTAyMkBnbWFpbC5jb20&amp;src=ZW4ucGsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23039BE5&amp;color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"><i class="fas fa-table"></i><span>open a google calender</span></a>
+      <a href="#"><i class="fas fa-share"></i><span>Shared with me </span></a>
+      <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
+      <a href="setting.html"><i class="fas fa-cogs"></i><span>Settings</span></a>
+    </div>
+    <div class="addlist">
+
+        <h1>ADD A TASK</h1>
+        <a href="#"><i class="fa fa-share-alt" style="font-size:36px ;margin-left:85% ;margin-top:-20%"></i></a>
+        <form>
+            <p>Add Title:</p>
+            <input type="text" name="" placeholder="">
+            <p>
+              <label>ADD DESCRIPTION:</label><br><br>
+              <textarea rows="5" cols="45">
+            </textarea>
+            </p><br>
+      
+            <form action="/action_page.php">
+                  <label for="cat" class="h1"><p>CATEGORY:</p></label>
+                      <select id="cat" name="cat">
+                         <option value="">HOME</option>
+                        <option value="">PERSONAL</option>
+                        <option value="" selected>WORK</option>
+                         <option value="">SHOPPING</option>
+                         <option value="">OTHERS</option>
+                     </select>
+        </form>
+            <p>Add Date:</p>
+            <input type="date" name="" placeholder="">
+            <p>Time:</p>
+            <input type="time" name="" placeholder="">
+           
+        </form>
+        
+    </div>
+    <div class="addlist2">
+        <h1>SETTINGS</h1>
+    
+           
+            <p>Remind ME</p>
+
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+             <p>REPEAT</p>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+    <form action="/action_page.php">
+      <label for="priority" class="h1"><p>PRIORITY</p></label>
+         <select id="priority" name="priority">
+              <option value="">Default</option>
+               <option value="">LOW</option>
+               <option value="" selected>MEDIUM</option>
+                <option value="">HIGH </option>
+         </select>
+    </form>
+
+    <form action="/action_page.php">
+      <label for="notifyme" class="h1"><p>NOTIFY ME</p></label>
+         <select id="notifyme" name="notifyme">
+              <option value="">Default</option>
+               <option value="">Before 15 min</option>
+               <option value="" selected>Before 30 min</option>
+                <option value="">Before 60 min </option>
+         </select>
+        </form>
+
+       
+            <a href="home.html"><input type="Add Task" value="DONE"></a><br>
+
+  
+     </div>
+
+
+</body>
+</head>
+</html>

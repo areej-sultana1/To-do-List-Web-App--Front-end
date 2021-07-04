@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction(){
+            var x=document.getElementById("myInput");
+            var x=document.getElementById("hide1");
+            var x=document.getElementById("hide2");
+            if(x.type==='password'){
+                x.type="text";
+                y.style.display="block";
+                z.style.display="none";
+            }
+            else{
+                x.type="password";
+                y.style.display="none";
+                z.style.display="block";
+            }
+        }
+        </script>
+</head>
+<body>
+   <img src="avatar.png" class="avatar">
+      <div class="form-box">
+       
+       <h1>LOGIN Here</h1>
+       <div class="input-box">
+           <i class="fa fa-envelope"></i>
+           <input type="email" placeholder="Email Id" required>
+           
+       </div>
+       <div class="input-box">
+           <i class="fa fa-key"></i>
+           <input type="password" placeholder="Password" id="myInput" required>
+           <span class="eye" onclick="myFunction()">
+           <i id="hide1" class="fa fa-eye"></i>
+           <i id="hide2" class="fa fa-eye-slash"></i>
+           </span>
+       </div>
+       <a href="home.html"><button type="button" class="login-btn">LOGIN</button></a>
+       <h5 >Don't have an account?</h5>
+       <a href="signup.html"><p style="margin-left:40%">SIGN UP</p></a>
+       <a href="lost.html"  ><p style="font-style: italic">lost your password</p></a>
+   </div>
+</body>
+</html>

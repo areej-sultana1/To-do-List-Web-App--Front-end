@@ -1,0 +1,425 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+header
+{
+   overflow:visible;
+  background: #22242A;
+  padding: 20px;
+  width: 100%;
+  height: 30px;
+}
+
+.left_area h3{
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-left: 300px;
+  font-weight: 900;
+}
+
+.left_area span{
+  color: #19B3D3;
+}
+.fa_custom {
+color: #19B3D3;
+ left: 91%;
+ position: absolute;
+ top:2%;
+}
+.fa_custom:hover
+{
+  background: #0B87A6;
+}
+
+  .logout_btn{
+  padding: 5px;
+  background: #19B3D3;
+  text-decoration: none;
+  float: right;
+  margin-top: -30px;
+  margin-right: 40px;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.logout_btn:hover{
+  background: #0B87A6;
+}
+
+ .sidebar {
+    background: #2f323a;
+    position: fixed;
+    padding: 2em;
+    top: 0%;
+    transform: translateX(-10%);
+}
+
+.sidebar .profile_image{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.sidebar h4{
+  color: #ccc;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.sidebar a{
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.sidebar a:hover{
+  background: #19B3D3;
+}
+
+.sidebar i{
+  padding-right: 10px;
+}
+ 
+label #sidebar_btn{
+  z-index: 1;
+  color: #fff;
+  position: absolute;
+  cursor: pointer;
+  left: 289px;
+  font-size: 20px;
+  margin: 5px 0;
+  transition: 0.5s;
+  transition-property: color;
+}
+
+label #sidebar_btn:hover{
+  color: #19B3D3;
+}
+
+#check:checked ~ .sidebar{
+  left: -190px;
+}
+
+#check:checked ~ .sidebar a span{
+  display: none;
+}
+
+#check:checked ~ .sidebar a{
+  font-size: 20px;
+  margin-left: 170px;
+  width: 80px;
+  height:65px;
+
+}
+
+
+body
+{
+ 
+  background: url(background.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 160vh;
+  transition: 0.5s;
+}
+
+
+#check:checked ~ .content{
+  margin-left: 60px;
+}
+
+#check{
+  display: none;
+}
+.z
+{
+     background: url(back.jpg);
+     position:center;
+    width: 100%;
+    height: 120%;
+
+}
+
+.addlist
+{
+    border-radius: 20px;
+    width: 350px;
+    background: rgba(0,0,0,0.8);
+    margin: 05% ;
+    margin-left: 27%;
+    margin-right: auto;
+    padding: 50px 0;
+    color: #fff;
+    padding: 60px 30px;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+  
+}
+.addlist2
+{
+    border-radius: 20px;
+    width: 360px;
+    background: rgba(0,0,0,0.8);
+    margin: 05% ;
+    margin-left: 75%;
+    margin-right: auto;
+    padding: 50px 0;
+    color: #fff;
+     padding: 60px 30px;
+    box-shadow: 0 0 20px 2px rgba(0,0,0,0.5);
+    top: 62.4%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+}
+
+h1
+{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: left;
+    font-size: 22px;
+}
+h2
+{
+    
+    text-align:center;
+    font-size: 35px;
+    color:#fff;
+    background-position: center;
+    background:rgba(0,0,0,0.8);
+    left :50; 
+    }
+
+
+.addlist p{
+    margin: 0;
+    padding: 0; 
+    font-weight: bold;
+}
+
+.addlist input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.addlist input[type="text"], input[type="date"], input[type="time"],input[type="number_format"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.addlist form textarea{
+    background:rgba(228, 241, 254, 1); 
+    color:black;
+    border-radius: 5px;
+    text-align: left;
+    
+}
+.addlist2 input[type="Add Task"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color:#19B3D3;
+   color:#fff;
+    width:350px;
+    font-size: 18px;
+    border-radius: 20px;
+    font-style: bold;
+    text-align: center;
+}
+.addlist2 input[type="Add Task"]:hover
+{
+    cursor: pointer;
+   background: rgba(31, 58, 147, 1);
+   /* color: blue;*/
+}
+.addlist a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.addlist a:hover
+{
+    color:#19B3D3 ;
+}
+
+
+/*start of toggle button*/
+.switch {
+  position:relative;
+  display: inline-block;
+  width: 60px;
+  margin-top: -10%;
+  left:75%;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+  display: inline;
+
+}
+
+/*end of toggle button*/
+
+/*start of drop down css*/
+#priority
+{
+    margin-left:130px;
+    width: 200px;
+     margin-top: -10%;
+    height: 25px;
+
+}
+#cat
+{
+    margin-left:4px;
+    width: 330px;
+    height: 25px;
+     margin-top: 6%;
+
+
+}
+
+
+
+#Notifyme
+{
+    margin-left:130px;
+    width: 200px;
+    height: 25px;
+     margin-top: -10%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

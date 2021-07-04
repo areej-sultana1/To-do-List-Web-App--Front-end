@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PROFILE SETUP</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="profilestyle.css">
+</head>
+<body>
+  
+<div class="sidenav">
+    <h5>Set Up Profile</h5>
+
+<form>
+    <select id="size" name="size">
+    <option value="1">100%</option>
+    <option value="2">50%</option>
+    <option value="3">25%</option>
+    </select>
+  </form>
+  <form class="form">
+    <input type="checkbox" id="filters" name="filters" value="Bike">
+    <label for="vehicle1"> always show link</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> show link when mouse over</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> hightlight hotspot when clicking</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> show remark flag</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> show remark when mouse over</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> show markup</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> markup roll with the page</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> show the hidden page</label><br>
+  </form>
+
+<button onclick="myFunction()">dark or light mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+  
+</div>
+
+<div class="content">
+  <h2>PROFILE SETUP</h2>
+  <div class="gallery">
+      <img src="avatar.png" alt="PROFILE PICTURE">
+      <form>
+        <label for="myfile"> </label>
+        <input type="file" id="myfile" name="myfile">
+      </form>
+  </div>
+<form >
+    <label for="fname">First Name</label><br>
+    <input type="text" id="fname" name="fname">
+    <br>
+    <label for="lname">Last Name</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="email">Your email</label><br>
+    <input type="text" id="email" name="email"><br>
+    <br>
+     <p>Enter DOB:</p>
+      <input type="date" name="" placeholder="">
+  <br><br>
+    <label for="gender">GENDER</label><br><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <label for="password">NEW Password</label><br>
+    <input type="text" id="password" name="password">
+    <br><br><br><input type="submit" value="DONE">
+    
+  </form>
+</div>
+
+</body>
+</html>
